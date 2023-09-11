@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend-aplicacao-nestjs:
+    container_name: backend-aplicacao-nestjs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    
